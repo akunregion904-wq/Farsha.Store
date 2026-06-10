@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "."
+public_folder: "/"
+collections:
+    - name: "produk"
+    label: "Produk Cheat FF"
+    folder: "produk"
+    create: true
+    slug: "{{slug}}"
+    fields:
+            - {label: "Nama Cheat", name: "title", widget: "select", options: ["PRIME HOOK APKMOD", "DRIP CLIENT (NO ROOT)", "DRIP CLIENT (ROOT)", "HG CHEAT", "PATO TEAM"], hint: "Pilih nama cheat"}
+            - {label: "Durasi", name: "durasi", widget: "select", options: ["1D", "3D", "7D", "15D", "30D"]}
+            - {label: "Harga", name: "harga", widget: "string", hint: "Contoh: 25K"}
+            - {label: "Gambar/Icon", name: "image", widget: "image"}
+            - {label: "Keterangan", name: "body", widget: "text", hint: "Contoh: NO BAN, Support Android 12-14"}
